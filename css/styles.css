@@ -1,56 +1,78 @@
-body{
-  /*background-image: url(../images/body_background.jpg);*/
-  margin: 0 0 0 0;
-  background-color: #2A2A2A;
-  font-size: 1.2vw;
+  body{
+    /*background-image: url(../images/body_background.jpg);*/
+    margin: 0 0 0 0;
+    background-size: cover;
+    transition: 2s ease;
+    background-color: #2A2A2A;
 
-}
-.cl_btnHeader{
-    background-color: #C33C54;
-    align-self: auto;
-    border: none;
-    color: white;
-    padding: .5em 1.5em;/*15px 32px;*/
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1em;
-    transition-duration: 0.4s;
   }
-.cl_btnHeader:hover{
-  background-color: #D88292;
-  cursor: pointer;
-}
-.cl_btnHeader:active{
-  background-color: #D88290;
-}
+  .cl_btnHeader{
+      background-color: #C33C54;
+      align-self: auto;
+      border: none;
+      color: white;
+      padding: .5em 1.5em;/*15px 32px;*/
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1em;
+      transition-duration: 0.4s;
+    }
+  .cl_btnHeader:hover{
+    background-color: #D88292;
+    cursor: pointer;
+  }
+  .cl_btnHeader:active{
+    background-color: #D88290;
+  }
+  .questions{
+    margin: 20px 20px 20px 20px;
+    padding: 5px 10px 10px 10px;
+    width:auto;
+    max-width: 50%;
+    word-wrap: break-word;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #944654;
+  }
+  #content{
+    padding: 0 20px 0 20px;
+  }
+  #header{
+    position: fixed;
+    height: 3.5em;
+    width: 100%;
+    top: 0;
+    left: 0;
+  /*  background-image: url(../images/header_background.jpg);*/
+    background-color: #232323;
+  }
+  #menu ul{
+    padding: .75em 0 0 2em;
+    margin: 0;
+  }
+  #twitch{
+    padding-top: 3.5em;
+    width: 100%;
+    color: #D88290;
+  }
+  #contact{
+    padding-top: 3.5em;
+    width: 100%;
+    color: #D88290;
+  }
+  #faq{
+    padding: 3.5em 0 0 0 ;
+    width: 100%;
+    color: #E8E8E8;
+  }
 
 
-#header{
-  position: fixed;
-  height: 3.5em;
-  width: 100%;
-  top: 0;
-  left: 0;
-/*  background-image: url(../images/header_background.jpg);*/
-  background-color: #232323;
+@media screen and (max-width: 980px) {
+  body{
+    background-color: lightgreen;
+  }
 }
-#menu ul{
-  padding: .75em 0 0 2em;
-  margin: 0;
-}
-#twitch{
-  padding-top: 3.5em;
-  width: 100%;
-  color: #D88290;
-}
-#contact{
-  padding-top: 3.5em;
-  width: 100%;
-  color: #D88290;
-}
-#faq{
-  padding: 3.5em 0 0 0 ;
-  width: 100%;
-  color: #D88290;
+
+@media screen and (min-width: 980px) {
 }
