@@ -1,0 +1,56 @@
+body{
+  /*background-image: url(../images/body_background.jpg);*/
+  margin: 0 0 0 0;
+  background-color: #2A2A2A;
+  font-size: 1.2vw;
+
+}
+.cl_btnHeader{
+    background-color: #C33C54;
+    align-self: auto;
+    border: none;
+    color: white;
+    padding: .5em 1.5em;/*15px 32px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    transition-duration: 0.4s;
+  }
+.cl_btnHeader:hover{
+  background-color: #D88292;
+  cursor: pointer;
+}
+.cl_btnHeader:active{
+  background-color: #D88290;
+}
+
+
+#header{
+  position: fixed;
+  height: 3.5em;
+  width: 100%;
+  top: 0;
+  left: 0;
+/*  background-image: url(../images/header_background.jpg);*/
+  background-color: #232323;
+}
+#menu ul{
+  padding: .75em 0 0 2em;
+  margin: 0;
+}
+#twitch{
+  padding-top: 3.5em;
+  width: 100%;
+  color: #D88290;
+}
+#contact{
+  padding-top: 3.5em;
+  width: 100%;
+  color: #D88290;
+}
+#faq{
+  padding: 3.5em 0 0 0 ;
+  width: 100%;
+  color: #D88290;
+}
