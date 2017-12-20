@@ -38,6 +38,15 @@
   #content{
     padding: 0 20px 0 20px;
   }
+  #twitch-embed{
+    width:60vw;
+    height: 33.75vw;
+    margin: 0 0 0 20px;
+    display: inline-block;
+  }
+  #chat{
+    height: 33.75vw;
+  }
   #header{
     position: fixed;
     height: 3.5em;
