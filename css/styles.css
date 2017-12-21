@@ -78,10 +78,19 @@
 
 
 @media screen and (max-width: 980px) {
-  body{
-    background-color: lightgreen;
+  #chat{
+    display: none;
+  }
+  #twitch-embed{
+    width:100%;
+    height: 56.25%;
+    margin: 0 0 0 20px;
+    display: inline-block;
   }
 }
 
 @media screen and (min-width: 980px) {
+  #chat{
+    display:inline-block;
+  }
 }
