@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Aexar</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="img/icon.png">
+  </head>
+  <body id="background">
+    <div id="header">
+      <div id="menu">
+        <ul>
+          <button type="button" name="btnTwitch" class="cl_btnHeader" onclick="toTwitch();">Twitch</button>
+          <button type="button" name="btnContact" class="cl_btnHeader" onclick="toContact();">Contact</button>
+          <button type="button" name="btnFAQ" class="cl_btnHeader" onclick="toFaq();">FAQ</button>
+        </ul>
+      </div>
+    </div>
+    <div id="content">
+      <div id="twitch">
+        <h1>Twitch</h1>
+        <!-- Add a placeholder for the Twitch embed -->
+        <div id="twitch-embed"></div>
+        <iframe frameborder="<frameborder width>"
+          scrolling="yes"
+          id="chat"
+          src="https://www.twitch.tv/monstercat/chat?popout="
+          height= "33.75vw"
+          width="auto">
+        </iframe>
+      </div>
+
+      <div id="contact">
+        <h1>Contact</h1>
+      </div>
+
+      <div id="faq">
+        <h1>FAQ</h1>
+        <div class="questions" id="question1">
+          <h2>Qui es-tu ?</h2>
+          <p>Je m'appelle xxxxx xxxxx de mon vrai nom, mais en ligne je suis Aexar. <br>Je fais des vidéos sur YouTube et parfois des live sur Twitch. </p>
+        </div>
+        <div class="questions" id="question2">
+          <h2>Qui es-tu ?</h2>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+        <div class="questions" id="question3">
+          <h2>Qui es-tu ?</h2>
+          <p>Je m'appelle xxxxx xxxxx de mon vrai nom, mais en ligne je suis Aexar. <br>Je fais des vidéos sur YouTube et parfois des live sur Twitch. </p>
+        </div>
+        <div class="questions" id="question4">
+          <h2>Qui es-tu ?</h2>
+          <p>Je m'appelle xxxxx xxxxx de mon vrai nom, mais en ligne je suis Aexar. <br>Je fais des vidéos sur YouTube et parfois des live sur Twitch. </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <script type="text/javascript">
+      var embed = new Twitch.Embed("twitch-embed", {
+        width: "100%",
+        height: "100%",
+        channel: "monstercat",
+        layout: "video",
+        autoplay: false
+      });
+
+        embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+        var player = embed.getPlayer();
+        player.play();
+      });
+    </script>
+  </body>
+  <script src="scripts/navigation.js">  </script>
+</html>
