@@ -15,7 +15,7 @@
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 1em;
+      font-size: 1.125em;
       transition-duration: 0.4s;
     }
   .cl_btnHeader:hover{
@@ -36,7 +36,7 @@
     background-color: #944654;
   }
   #content{
-    padding: 0 20px 0 20px;
+    padding: 0 1.5vw 0 1.5vw;
   }
   #twitch-embed{
     width:60vw;
