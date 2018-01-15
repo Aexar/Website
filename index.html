@@ -4,15 +4,30 @@
     <meta charset="utf-8">
     <title>Aexar</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/base.css" />
     <link rel="icon" href="img/icon.png">
   </head>
   <body id="background">
+    <!-- <nav id="aexar-navbar" class="navbar is-fixed-top">
+      <div class="container">
+        <div class="navbar-brand">
+
+        </div>
+        <div class="navbar-menu" id="navMenu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="#twitch">Stream</a>
+            <a class="navbar-item" href="#contact">Contact</a>
+            <a class="navbar-item" href="#faq">A propos</a>
+          </div>
+        </div>
+      </div>
+    </nav> -->
     <div id="header">
       <div id="menu">
         <ul>
-          <button type="button" name="btnTwitch" class="cl_btnHeader" onclick="toTwitch();">Twitch</button>
-          <button type="button" name="btnContact" class="cl_btnHeader" onclick="toContact();">Contact</button>
-          <button type="button" name="btnFAQ" class="cl_btnHeader" onclick="toFaq();">FAQ</button>
+          <button type="button" name="btnTwitch" class="cl-btnHeader" onclick="toTwitch();">Twitch</button>
+          <button type="button" name="btnContact" class="cl-btnHeader" onclick="toContact();">Contact</button>
+          <button type="button" name="btnFAQ" class="cl-btnHeader" onclick="toFaq();">FAQ</button>
         </ul>
       </div>
     </div>
@@ -66,7 +81,7 @@
         autoplay: false
       });
 
-        embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+        embed.addEventListener(Twitch.Embed.VIDEO-READY, () => {
         var player = embed.getPlayer();
         player.play();
       });

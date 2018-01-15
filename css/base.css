@@ -1,0 +1,105 @@
+html{
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+}
+
+body{
+  margin: 0 0 0 0;
+  background-size: cover;
+  transition: 2s ease;
+  background-color: #212121;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* NAVBAR */
+.navbar{
+  background: none;
+  transition-duration: : 86ms;
+  transition-timing-function: ease-out;
+}
+.navbar.is-fixed-top {
+      left: 0;
+      position: fixed;
+      right: 0;
+      z-index: 6;
+}
+.navbar.is-freestanding{
+      background: #151515;
+}
+.navbar.is-dark a:hover{
+  background-color: #212121;
+}
+
+/* CONTAINER */
+.navbar>.container {
+    align-items: stretch;
+    display: flex;
+    margin: 0 30px 0 30px;
+    min-height: 64px;
+    width: 100%;
+}
+@media screen and (min-width: 1024px){
+  .container{
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+/* NAVBAR-BRAND */
+.navbar-brand{
+  background-image: url("../img/logo.png");
+  width: 300px;
+  height: 48px;
+  margin: 8px 60px 8px 0px;
+}
+/* NAVBAR-ITEM */
+.navbar-item{
+  flex-grow: 0;
+  flex-shrink: 0;
+  line-height: 3;
+  padding: .5rem 1rem;
+  position: relative;
+}
+
+@media screen and(min-width: 1024px) {
+  .navbar-item{
+    align-items: center;
+    display: flex;
+    line-height: 1.5;
+    padding: .5rem 1rem;
+    position: relative;
+  }
+}
+
+/* NAVBAR-BURGER */
+.navbar-burger {
+    cursor: pointer;
+    display: block;
+    height: 64px;
+    position: relative;
+    width: 64px;
+    margin-left: auto;
+    background-color: red;
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 1024px){
+.navbar, .navbar-menu, .navbar-start{
+    min-height: 64px;
+    align-items: stretch;
+    display: flex;
+    width: inherit;
+}
+
+
+/* A */
+a {
+    color: #E8E8E8;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #2e2e2e;
+}
